@@ -147,11 +147,12 @@ section {
     HOME SECTION STYLES
 ----------------------------*/
 #home {
-    background: url(../Images/planets.jpg) no repeat 50% 50%;
+    background: url(../Images/Thumbnails/azeroth_1.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-attachment: fixed;
-    -moz-background-soze: cover;
-    -o-background-soze: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100%;
     display: block;
     height: auto;
@@ -433,7 +434,7 @@ section {
 }
 
 .photo-container img {
-    max-width 100%;
+    max-width: 100%;
     width: 300px;
     height:169px;
 }
@@ -476,7 +477,7 @@ section {
 }
 
 .photo:hover img {
-    transform:scale(1.1;)
+    transform:scale(1.1);
 }
 
 
