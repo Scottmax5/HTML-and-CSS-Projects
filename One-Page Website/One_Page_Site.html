@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Porsche 718 GT4</title>
-		<link rel="stylesheet" href="one_page_site.css">
+		<link rel="stylesheet" href="css/one_page_site.css">
+		<script src="JS/one_page_site.js" defer></script>
 	</head>
 	<body>
 	
@@ -28,6 +29,62 @@
 			</div>
 		</div>
 		<!--END HOME -->
+
+		<!--LIGHT BOX START-->  
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./Images/Thumb/thumbnail_1.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./Images/Thumb/thumbnail_2.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./Images/Thumb/thumbnail_3.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./Images/Thumb/thumbnail_4.jpg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+
+			  <div class="column">
+				<img class="demo" src="./Images/Resized/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Rational. Irrational. Sanity. Insanity. Perfectly. 
+				Imperfection. The difference is sometimes extremely subtle. And sometimes it's as sharp as a razor blade.">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Resized/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt='he 718 Cayman GT4 is the perfect sports car for those who 
+				like to push the limits. For those who would rather ask "Why not?" than "Why?". For those who take fun seriously and who would rather sit in a sports 
+				seat than a leather arm chair.'>
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Resized/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="414 HP | 4.4s Acceleration from 0 - 100 km/h |
+				304 km/h Top track speed with summer tires">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Resized/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="In the Porsche Exclusive Manufaktur we offer you a variety
+				 of personalization options for exterior and interior. For your completely personalized vehicle.">
+			  </div>
+			</div>
+		</div> 
+		<!--LIGHT BOX END-->
 		
 		<!-- GALLERY -->
 		<section>
@@ -38,7 +95,7 @@
 					<!-- PHOTO CONTAINER 1 -->
 					<div>
 						<div>
-							<img src="./Images/Thumb/thumbnail_1.jpeg" alt="Grey Porsche" width="1000" height="544">
+							<img src="./Images/Thumb/thumbnail_1.jpeg" alt="Grey Porsche" width="1000" height="544" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 							<h2>Perfectly Irrational.</h2>
 								<p>Rational. Irrational. Sanity. Insanity. Perfectly. Imperfection. The difference is sometimes extremely 
@@ -51,7 +108,7 @@
 					<!-- PHOTO CONTAINER 2 -->
 					<div>
 						<div">
-							<img src="./Images/Thumb/thumbnail_2.jpg" alt="Yellow Porsche" width="1000" height="544">
+							<img src="./Images/Thumb/thumbnail_2.jpg" alt="Yellow Porsche" width="1000" height="544" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<p>The 718 Cayman GT4 is the perfect sports car for those who like to push the limits. For those who would 
 								rather ask "Why not?" than "Why?". For those who take fun seriously and who would rather sit in a sports 
@@ -64,7 +121,7 @@
 					<!-- PHOTO CONTAINER 3 -->
 					<div> 
 						<div>
-							<img src="./Images/Thumb/thumbnail_3.jpg" alt="Black Porsche" width="1000" height="544">
+							<img src="./Images/Thumb/thumbnail_3.jpg" alt="Black Porsche" width="1000" height="544" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<p>414 HP</p>
 								<p>4.4s Acceleration from 0 - 100 km/h</p>
@@ -77,7 +134,7 @@
 					<!-- PHOTO CONTAINER 4 -->
 					<div>
 						<div>
-							<img src="./Images/Thumb/thumbnail_4.jpg" alt="Blue Porsche" width="1000" height="544">
+							<img src="./Images/Thumb/thumbnail_4.jpg" alt="Blue Porsche" width="1000" height="544" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h2>Personalization & finishing</h2>
 								<p>In the Porsche Exclusive Manufaktur we offer you a variety of personalization options for exterior and 
